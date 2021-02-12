@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.View1">
+   <children>
+      <Button fx:id="BtnStart" layoutX="59.0" layoutY="72.0" mnemonicParsing="false" onAction="#newCllicked" prefHeight="25.0" prefWidth="226.0" text="Start Tracking" />
+      <Button fx:id="BtnHistory" layoutX="329.0" layoutY="72.0" mnemonicParsing="false" onAction="#getActivity" prefHeight="25.0" prefWidth="226.0" text="View Activity" />
+      <AnchorPane layoutX="73.0" layoutY="127.0" prefHeight="230.0" prefWidth="471.0" style="-fx-background-color: #B4F8C8;">
+         <children>
+            <AnchorPane layoutX="55.0" layoutY="34.0" prefHeight="163.0" prefWidth="160.0" style="-fx-background-color: #F9F1F0;">
+               <children>
+                  <ImageView fx:id="img1" fitHeight="163.0" fitWidth="180.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+            <Button fx:id="btnPause" layoutX="301.0" layoutY="116.0" mnemonicParsing="false" onAction="#pressedPause" prefHeight="32.0" prefWidth="72.0" text="Pause" />
+            <Button fx:id="BtnStop" layoutX="301.0" layoutY="57.0" mnemonicParsing="false" onAction="#pressedStop" prefHeight="32.0" prefWidth="72.0" text="Stop" />
+         </children>
+      </AnchorPane>
+      <SplitPane dividerPositions="0.5" layoutX="487.0" layoutY="14.0" prefHeight="25.0" prefWidth="72.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="TxtMin" strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" wrappingWidth="39.00001645088196" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="34.0">
+               <children>
+                  <Text fx:id="TxtSecond" strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" wrappingWidth="39.00001645088196" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
