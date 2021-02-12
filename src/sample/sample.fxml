@@ -14,17 +14,17 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <AnchorPane layoutX="294.0" layoutY="75.0" prefHeight="270.0" prefWidth="287.0" style="-fx-background-color: f2a154;">
+      <AnchorPane fx:id="ApaneLogin" layoutX="294.0" layoutY="75.0" prefHeight="270.0" prefWidth="287.0" style="-fx-background-color: f2a154;" visible="true">
          <children>
-            <TextField layoutX="49.0" layoutY="76.0" prefHeight="53.0" prefWidth="204.0" promptText="Username">
+            <TextField fx:id="txtUserl" layoutX="49.0" layoutY="76.0" prefHeight="53.0" prefWidth="204.0" promptText="Username">
                <font>
                   <Font size="14.0" />
                </font></TextField>
-            <PasswordField layoutX="49.0" layoutY="145.0" prefHeight="53.0" prefWidth="204.0" promptText="Password">
+            <PasswordField fx:id="txtPassl" layoutX="49.0" layoutY="145.0" prefHeight="53.0" prefWidth="204.0" promptText="Password">
                <font>
                   <Font size="14.0" />
                </font></PasswordField>
-            <Button fx:id="btn1" layoutX="91.0" layoutY="215.0" mnemonicParsing="false" onAction="#pressButton" prefHeight="41.0" prefWidth="106.0" text="Submit">
+            <Button fx:id="BtnLogin" layoutX="49.0" layoutY="224.0" mnemonicParsing="false" onAction="#login" prefHeight="32.0" prefWidth="85.0" text="Login">
                <font>
                   <Font size="14.0" />
                </font></Button>
@@ -33,7 +33,37 @@
                   <Font name="System Bold Italic" size="18.0" />
                </font>
             </Text>
+            <Button fx:id="BtnSignupl" layoutX="168.0" layoutY="224.0" mnemonicParsing="false" onAction="#doSignup" prefHeight="32.0" prefWidth="85.0" text="Sign-Up" />
          </children>
       </AnchorPane>
+      <AnchorPane fx:id="ApaneSignup" layoutX="294.0" layoutY="75.0" prefHeight="270.0" prefWidth="287.0" style="-fx-background-color: #f28efb;" visible="false">
+         <children>
+            <PasswordField fx:id="txtSignPass" layoutX="32.0" layoutY="118.0" prefHeight="39.0" prefWidth="204.0" promptText="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="txtSignUser" layoutX="32.0" layoutY="67.0" prefHeight="39.0" prefWidth="204.0" promptText="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Text layoutX="84.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SignUp" textAlignment="CENTER" wrappingWidth="99.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="BtnLogins" layoutX="171.0" layoutY="227.0" mnemonicParsing="false" onAction="#doLogin" prefHeight="32.0" prefWidth="85.0" text="Login">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="BtnSignup" layoutX="32.0" layoutY="227.0" mnemonicParsing="false" onAction="#signup" prefHeight="32.0" prefWidth="85.0" text="Sign-Up" />
+            <PasswordField fx:id="txtSignRepass" layoutX="32.0" layoutY="169.0" prefHeight="39.0" prefWidth="204.0" promptText="Retype Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+         </children></AnchorPane>
    </children>
 </AnchorPane>

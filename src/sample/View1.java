@@ -144,12 +144,14 @@ public class View1 {
         timer.stop();
         captureWebcam();
         captureImage();
+        Stage s  =(Stage) TxtMin.getScene().getWindow();
+        s.close();
     }
     public void getActivity(ActionEvent actionEvent) throws IOException {
         Parent p =  FXMLLoader.load(getClass().getResource("view2.fxml"));
         Stage stage = new Stage();
         stage.setTitle("History");
-        stage.setScene(new Scene(p, 600, 400));
+        stage.setScene(new Scene(p, 1000, 600));
         stage.show();
         Stage tage =(Stage) btnPause.getScene().getWindow();
         tage.hide();

@@ -7,11 +7,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.View1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f8c4b7;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.View1">
    <children>
       <Button fx:id="BtnStart" layoutX="59.0" layoutY="72.0" mnemonicParsing="false" onAction="#newCllicked" prefHeight="25.0" prefWidth="226.0" text="Start Tracking" />
       <Button fx:id="BtnHistory" layoutX="329.0" layoutY="72.0" mnemonicParsing="false" onAction="#getActivity" prefHeight="25.0" prefWidth="226.0" text="View Activity" />
-      <AnchorPane layoutX="73.0" layoutY="127.0" prefHeight="230.0" prefWidth="471.0" style="-fx-background-color: #B4F8C8;">
+      <AnchorPane layoutX="73.0" layoutY="127.0" prefHeight="230.0" prefWidth="471.0" style="-fx-background-color: #fddad2;">
          <children>
             <AnchorPane layoutX="55.0" layoutY="34.0" prefHeight="163.0" prefWidth="160.0" style="-fx-background-color: #F9F1F0;">
                <children>

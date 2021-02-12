@@ -4,26 +4,18 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.View2">
+<AnchorPane fx:id="Apane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #f179fb;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.View2">
    <children>
-      <DatePicker fx:id="dtPic" editable="false" layoutX="64.0" layoutY="40.0" onAction="#getDate" showWeekNumbers="true" />
-      <Label layoutX="250.0" layoutY="6.0" prefHeight="17.0" prefWidth="100.0" text="Trace User Activity" textAlignment="CENTER" />
-      <GridPane fx:id="gp" layoutX="40.0" layoutY="82.0" prefHeight="307.0" prefWidth="526.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-      </GridPane>
-      <Button fx:id="BtnSs" layoutX="260.0" layoutY="40.0" mnemonicParsing="false" onAction="#showSs" text="ScreenShots" />
-      <Button fx:id="btnCam" layoutX="358.0" layoutY="40.0" mnemonicParsing="false" onAction="#showCam" text="CamCaptures" />
+      <DatePicker fx:id="dtPic" editable="false" layoutX="283.0" layoutY="48.0" onAction="#getDate" showWeekNumbers="true" />
+      <Label layoutX="409.0" layoutY="14.0" prefHeight="27.0" prefWidth="160.0" text="Trace User Activity" textAlignment="CENTER" textFill="#f56262">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="BtnSs" layoutX="479.0" layoutY="48.0" mnemonicParsing="false" onAction="#showSs" text="ScreenShots" />
+      <Button fx:id="btnCam" layoutX="577.0" layoutY="48.0" mnemonicParsing="false" onAction="#showCam" text="CamCaptures" />
+      <TilePane fx:id="TlPane" layoutX="43.0" layoutY="83.0" prefHeight="481.0" prefWidth="922.0" style="-fx-background-color: #94f8cd;" />
    </children>
 </AnchorPane>
