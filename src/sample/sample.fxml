@@ -36,7 +36,7 @@
             <Button fx:id="BtnSignupl" layoutX="168.0" layoutY="224.0" mnemonicParsing="false" onAction="#doSignup" prefHeight="32.0" prefWidth="85.0" text="Sign-Up" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="ApaneSignup" layoutX="294.0" layoutY="75.0" prefHeight="270.0" prefWidth="287.0" style="-fx-background-color: #f28efb;" visible="false">
+      <AnchorPane fx:id="ApaneSignup" layoutX="294.0" layoutY="75.0" prefHeight="270.0" prefWidth="287.0" style="-fx-background-color: #f28efb;" visible="true">
          <children>
             <PasswordField fx:id="txtSignPass" layoutX="32.0" layoutY="118.0" prefHeight="39.0" prefWidth="204.0" promptText="Password">
                <font>
