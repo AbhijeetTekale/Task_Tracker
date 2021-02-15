@@ -30,7 +30,7 @@ public class View1 {
     @FXML
     Button BtnStop,btnPause;
     Timer timer;
-    int sec=0,min=0;
+    int sec=-1,min=0;
     public void newCllicked(ActionEvent actionEvent) {
         simpletimer();
         timer.start();
